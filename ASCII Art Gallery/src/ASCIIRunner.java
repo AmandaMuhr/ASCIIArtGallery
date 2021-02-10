@@ -19,5 +19,11 @@ public class ASCIIRunner
 				//Choose color
 				System.out.println("Before we begin, please choose the color you'd like to view the pictures in:");
 			}
+		
+		public static void testPlugIn()
+		{
+			//Confirmed that color plug in works
+			System.out.println("Hello \u001b[1;31mred\u001b[0m world!");
+		}
 
 	}
