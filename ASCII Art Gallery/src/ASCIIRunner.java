@@ -18,6 +18,9 @@ public class ASCIIRunner
 				System.out.println(" ");
 				//Choose color
 				System.out.println("Before we begin, please choose the color you'd like to view the pictures in:");
+				
+				//Printing red in red not working like before
+				System.out.println("1)" +  "\u001b[1;31mred\u001b[0m");
 			}
 		
 		public static void testPlugIn()
