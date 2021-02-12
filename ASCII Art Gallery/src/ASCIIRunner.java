@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class ASCIIRunner
 	{
@@ -17,6 +18,9 @@ public class ASCIIRunner
 			{
 				//Example of how to color text
 				//System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET);
+			
+				Scanner userInput = new Scanner(System.in);
+				
 				System.out.println("Welcome to the ASCII Art Gallery!");
 				System.out.println("We are the only institution in the APCS world that has exhibits made entirely of ASCII art.");
 				System.out.println(" ");
@@ -28,15 +32,67 @@ public class ASCIIRunner
 				System.out.println("3) " + ConsoleColors.BLUE + "Blue" + ConsoleColors.RESET);
 				System.out.println("4) " + ConsoleColors.PURPLE + "Purple" + ConsoleColors.RESET);
 				System.out.println("5) " + ConsoleColors.CYAN + "Cyan" + ConsoleColors.RESET);
+				//It doesn't like 'private' for some reason???
+				int choice = userInput.nextInt();
+				
+				if(choice == 1)
+					{
+						viewInRed();
+					}
+				
+				if(choice == 2)
+					{
+						viewInGreen();
+					}
+				
+				if(choice == 3)
+					{
+						viewInBlue();
+					}
+				
+				if(choice == 4)
+					{
+						viewInPurple();
+					}
+				
+				if(choice == 5)
+					{
+						viewInCyan();
+					}
+				
 			}
 		
 		public static void testPlugIn()
 			{
-				//Confirmed that color plug in works
-				//Immediately after adding ConsoleColors class,it's no longer working
+				//Confirmed that color plug in works on both machines
 				System.out.println("Hello \u001b[1;31mred\u001b[0m world!");
 			}
 		
+		public static void viewInRed()
+			{
+			
+			}
+		
+		public static void viewInGreen()
+			{
+			
+			}
+		
+		public static void viewInBlue()
+			{
+
+			}
+		
+		public static void viewInPurple()
+			{
+			
+			}
+		
+		public static void viewInCyan()
+			{
+			
+			}
+			
 		public static void endTour()
 			{
 				System.out.println(" ");
