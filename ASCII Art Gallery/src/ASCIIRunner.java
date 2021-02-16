@@ -14,7 +14,6 @@ public class ASCIIRunner
 				// 3) If time, add a randomized color option
 
 				greetUser();
-				chooseExhibit();
 				chooseColor();
 				endTour();
 			}
@@ -73,11 +72,28 @@ public class ASCIIRunner
 		public static void chooseExhibit()
 			{
 				//Just beginning ideas for categories; can change up until ASCII images are uploaded
+				
 				System.out.println("Which exhbit would you like to view?");
 				System.out.println("1) Nature");
 				System.out.println("2) Superheroes");
 				System.out.println("3) Patriotism");
 				choice = userInput.nextInt();
+				
+				
+				if(choice == 1)
+					{
+						lookAtNaturePics();
+					}
+				
+				if(choice == 2)
+					{
+						lookAtSuperheroPics();
+					}
+				
+				if(choice == 3)
+					{
+						lookAtPatrioticPics();
+					}
 			}
 	
 		
@@ -89,6 +105,7 @@ public class ASCIIRunner
 		
 		public static void viewInRed()
 			{
+				chooseExhibit();
 				System.out.println(ConsoleColors.RED + " ");
 				//Run method here
 				System.out.println(ConsoleColors.RESET + " ");
@@ -96,6 +113,7 @@ public class ASCIIRunner
 		
 		public static void viewInGreen()
 			{
+				chooseExhibit();
 				System.out.println(ConsoleColors.GREEN + " ");
 				//Run method here
 				System.out.println(ConsoleColors.RESET + " ");
@@ -103,13 +121,15 @@ public class ASCIIRunner
 		
 		public static void viewInBlue()
 			{
+				chooseExhibit();
 				System.out.println(ConsoleColors.BLUE + " ");
 				//Run method here
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
 		public static void viewInPurple()
-			{
+			{	
+				chooseExhibit();
 				System.out.println(ConsoleColors.PURPLE + " ");
 				//Run method here
 				System.out.println(ConsoleColors.RESET + " ");
@@ -117,9 +137,25 @@ public class ASCIIRunner
 		
 		public static void viewInCyan()
 			{
+				chooseExhibit();
 				System.out.println(ConsoleColors.CYAN + " ");
 				//Run method here
 				System.out.println(ConsoleColors.RESET + " ");
+			}
+		
+		public static void lookAtNaturePics()
+			{
+				System.out.println("Nature method works");
+			}
+		
+		public static void lookAtSuperheroPics()
+			{
+				System.out.println("Superhero method works");
+			}
+		
+		public static void lookAtPatrioticPics()
+			{
+				System.out.println("Patriotism method works");
 			}
 			
 		public static void endTour()
