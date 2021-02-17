@@ -14,88 +14,9 @@ public class ASCIIRunner
 				// 3) If time, add a randomized color option
 
 				greetUser();
-				chooseColor();
+				chooseExhibitAndColor();
 				endTour();
 			}
-		
-		public static void greetUser()
-			{
-				//Example of how to color text
-				//System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET);
-			
-				
-				System.out.println("Welcome to the ASCII Art Gallery!");
-				System.out.println("We are the only institution in the APCS world that has exhibits made entirely of ASCII art.");
-				System.out.println(" ");
-			}
-		
-		public static void chooseColor()
-		{
-				//Choose color
-				System.out.println(" ");
-				System.out.println("Before we begin, please choose the color you'd like to view the pictures in:");
-				System.out.println("1) " + ConsoleColors.RED + "Red" + ConsoleColors.RESET);
-				System.out.println("2) " + ConsoleColors.GREEN + "Green" + ConsoleColors.RESET);
-				System.out.println("3) " + ConsoleColors.BLUE + "Blue" + ConsoleColors.RESET);
-				System.out.println("4) " + ConsoleColors.PURPLE + "Purple" + ConsoleColors.RESET);
-				System.out.println("5) " + ConsoleColors.CYAN + "Cyan" + ConsoleColors.RESET);
-				//It doesn't like 'private' for some reason???
-				choice = userInput.nextInt();
-				
-				if(choice == 1)
-					{
-						viewInRed();
-					}
-				
-				if(choice == 2)
-					{
-						viewInGreen();
-					}
-				
-				if(choice == 3)
-					{
-						viewInBlue();
-					}
-				
-				if(choice == 4)
-					{
-						viewInPurple();
-					}
-				
-				if(choice == 5)
-					{
-						viewInCyan();
-					}
-				
-			}
-		
-		public static void chooseExhibit()
-			{
-				//Just beginning ideas for categories; can change up until ASCII images are uploaded
-				
-				System.out.println("Which exhbit would you like to view?");
-				System.out.println("1) Nature");
-				System.out.println("2) Superheroes");
-				System.out.println("3) Patriotism");
-				choice = userInput.nextInt();
-				
-				
-				if(choice == 1)
-					{
-						lookAtNaturePics();
-					}
-				
-				if(choice == 2)
-					{
-						lookAtSuperheroPics();
-					}
-				
-				if(choice == 3)
-					{
-						lookAtPatrioticPics();
-					}
-			}
-	
 		
 		public static void testPlugIn()
 			{
@@ -103,61 +24,103 @@ public class ASCIIRunner
 				System.out.println("Hello \u001b[1;31mred\u001b[0m world!");
 			}
 		
-		public static void viewInRed()
+		public static void greetUser()
 			{
-				chooseExhibit();
-				System.out.println(ConsoleColors.RED + " ");
-				//Run method here
-				System.out.println(ConsoleColors.RESET + " ");
+				//Example of how to color text
+				//System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET);
+				
+				System.out.println("Welcome to the ASCII Art Gallery!");
+				System.out.println("We are the only institution in the APCS world that has exhibits made entirely of ASCII art.");
+				System.out.println(" ");
 			}
 		
-		public static void viewInGreen()
+		public static void chooseExhibitAndColor()
 			{
-				chooseExhibit();
+				System.out.println("Please choose the exhibit you'd like to view:");
+				System.out.println("1) " + ConsoleColors.GREEN + "Green Superheroes" + ConsoleColors.RESET);
+				System.out.println("2) " + ConsoleColors.PURPLE + "Purple Superheroes" + ConsoleColors.RESET);
+				System.out.println("3) " + ConsoleColors.CYAN + "Cyan Superheroes" + ConsoleColors.RESET);
+				System.out.println("4) " + ConsoleColors.GREEN + "Green Nature" + ConsoleColors.RESET);
+				System.out.println("5) " + ConsoleColors.PURPLE + "Purple Nature" + ConsoleColors.RESET);
+				System.out.println("6) " + ConsoleColors.CYAN + "Cyan Nature" + ConsoleColors.RESET);
+				choice = userInput.nextInt();
+				
+				if(choice == 1)
+					{
+						viewGreenSuperheroes();
+					}
+				
+				if(choice == 2)
+					{
+						viewPurpleSuperheroes();
+					}
+				
+				if(choice == 3)
+					{
+						viewCyanSuperheroes();
+					}
+				
+				if(choice == 4)
+					{
+						viewGreenNature();
+					}
+				
+				if(choice == 5)
+					{
+						viewPurpleNature();
+					}
+				
+				if(choice == 6)
+					{
+						viewCyanNature();
+					}
+				
+				
+			}
+		
+		public static void viewGreenSuperheroes()
+			{
+
 				System.out.println(ConsoleColors.GREEN + " ");
-				//Run method here
+				System.out.println("Green superheroes works");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
-		public static void viewInBlue()
+		public static void viewPurpleSuperheroes()
 			{
-				chooseExhibit();
-				System.out.println(ConsoleColors.BLUE + " ");
-				//Run method here
-				System.out.println(ConsoleColors.RESET + " ");
-			}
-		
-		public static void viewInPurple()
-			{	
-				chooseExhibit();
 				System.out.println(ConsoleColors.PURPLE + " ");
-				//Run method here
+				System.out.println("Purple superheroes works");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
-		public static void viewInCyan()
+		public static void viewCyanSuperheroes()
 			{
-				chooseExhibit();
 				System.out.println(ConsoleColors.CYAN + " ");
-				//Run method here
+				System.out.println("Cyan superheroes works");
+				System.out.println(ConsoleColors.RESET + " ");
+			}
+	
+		public static void viewGreenNature()
+			{
+				System.out.println(ConsoleColors.GREEN + " ");
+				System.out.println("Green nature works");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
-		public static void lookAtNaturePics()
+		public static void viewPurpleNature()
 			{
-				System.out.println("Nature method works");
+				System.out.println(ConsoleColors.PURPLE + " ");
+				System.out.println("Purple Nature works");
+				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
-		public static void lookAtSuperheroPics()
+		public static void viewCyanNature()
 			{
-				System.out.println("Superhero method works");
+				System.out.println(ConsoleColors.CYAN + " ");
+				System.out.println("Cyan nature works");
+				System.out.println(ConsoleColors.RESET + " ");
 			}
-		
-		public static void lookAtPatrioticPics()
-			{
-				System.out.println("Patriotism method works");
-			}
-			
+					
 		public static void endTour()
 			{
 				System.out.println("Welcome back! We hope you enjoyed your time at the ASCII Art Gallery!");
