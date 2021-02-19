@@ -31,8 +31,12 @@ public class ASCIIRunner
 				//Example of how to color text
 				//System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET);
 				
-				System.out.println("Welcome to the ASCII Art Gallery!");
-				System.out.println("We are the only institution in the APCS world that has exhibits made entirely of ASCII art.");
+				System.out.print("Welcome to the ");
+				//Next three lines create fancy ASCII ART GALLERY
+				System.out.print(ConsoleColors.RED_BOLD + "A" + ConsoleColors.BLUE_BOLD + "S" + ConsoleColors.YELLOW_BOLD + "C" + ConsoleColors.PURPLE_BOLD + "I" + ConsoleColors.GREEN_BOLD + "I");
+				System.out.print(" " + ConsoleColors.CYAN_BOLD + "A" + ConsoleColors.RED_BOLD + "R" + ConsoleColors.BLUE_BOLD + "T");
+				System.out.println(" " + ConsoleColors.YELLOW_BOLD + "G" + ConsoleColors.PURPLE_BOLD + "A" + ConsoleColors.GREEN_BOLD + "L" + ConsoleColors.CYAN_BOLD + "L" + ConsoleColors.RED_BOLD + "E" + ConsoleColors.BLUE_BOLD + "R" + ConsoleColors.YELLOW_BOLD + "Y" + ConsoleColors.PURPLE_BOLD + "!");
+				System.out.println(ConsoleColors.RESET + "We are the only institution in the APCS world that has exhibits made entirely of ASCII art.");
 				System.out.println(" ");
 			}
 		
@@ -451,29 +455,32 @@ public class ASCIIRunner
 		public static void viewGreenNature()
 			{
 				System.out.println(ConsoleColors.GREEN + " ");
-				System.out.println("Green nature works");
+				System.out.println("x ");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
 		public static void viewPurpleNature()
 			{
 				System.out.println(ConsoleColors.PURPLE + " ");
-				System.out.println("Purple Nature works");
+				System.out.println("x ");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
 		public static void viewCyanNature()
 			{
 				System.out.println(ConsoleColors.CYAN + " ");
-				System.out.println("Cyan nature works");
+				System.out.println("x ");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 					
 		public static void endTour()
 			{
-				System.out.println("Welcome back! We hope you enjoyed your time at the ASCII Art Gallery!");
+				System.out.print("Welcome back! We hope you enjoyed your time at the ");
+				System.out.print(ConsoleColors.RED_BOLD + "A" + ConsoleColors.BLUE_BOLD + "S" + ConsoleColors.YELLOW_BOLD + "C" + ConsoleColors.PURPLE_BOLD + "I" + ConsoleColors.GREEN_BOLD + "I");
+				System.out.print(" " + ConsoleColors.CYAN_BOLD + "A" + ConsoleColors.RED_BOLD + "R" + ConsoleColors.BLUE_BOLD + "T");
+				System.out.println(" " + ConsoleColors.YELLOW_BOLD + "G" + ConsoleColors.PURPLE_BOLD + "A" + ConsoleColors.GREEN_BOLD + "L" + ConsoleColors.CYAN_BOLD + "L" + ConsoleColors.RED_BOLD + "E" + ConsoleColors.BLUE_BOLD + "R" + ConsoleColors.YELLOW_BOLD + "Y" + ConsoleColors.PURPLE_BOLD + "!");
 				System.out.println(" ");
-				System.out.println("Note from Creator: Special thanks go to Chris Moser for his patience & computer wizardry.");
+				System.out.println(ConsoleColors.RESET + "Note from Creator: Special thanks go to Chris Moser for his patience & computer wizardry.");
 			}
 		
 
