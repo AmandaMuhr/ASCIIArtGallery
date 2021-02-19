@@ -455,21 +455,21 @@ public class ASCIIRunner
 		public static void viewGreenNature()
 			{
 				System.out.println(ConsoleColors.GREEN + " ");
-				System.out.println("Green nature works");
+				System.out.println("x ");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
 		public static void viewPurpleNature()
 			{
 				System.out.println(ConsoleColors.PURPLE + " ");
-				System.out.println("Purple Nature works");
+				System.out.println("x ");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
 		public static void viewCyanNature()
 			{
 				System.out.println(ConsoleColors.CYAN + " ");
-				System.out.println("Cyan nature works");
+				System.out.println("x ");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 					
