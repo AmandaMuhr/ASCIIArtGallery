@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ASCIIRunner
 	{
 
-	//This version is up to date as of Thursday, February 18, 2021!
+	//This version is up to date as of Saturday, February 20, 2021!
 	
 		static Scanner userInput = new Scanner(System.in);
 		static int choice = 0;
@@ -11,7 +11,7 @@ public class ASCIIRunner
 		public static void main(String[] args)
 			{
 				// Goals:
-				// 1) Let user choose color they want to see the ASCII art in
+				// 1) Let user choose color they want to see the ASCII art in (Completed)
 				// 2) Have at least 3 categories of pictures for them to look through
 				// 3) If time, add a randomized color option
 
@@ -46,9 +46,9 @@ public class ASCIIRunner
 				System.out.println("1) " + ConsoleColors.GREEN + "Green Superheroes" + ConsoleColors.RESET);
 				System.out.println("2) " + ConsoleColors.PURPLE + "Purple Superheroes" + ConsoleColors.RESET);
 				System.out.println("3) " + ConsoleColors.CYAN + "Cyan Superheroes" + ConsoleColors.RESET);
-				System.out.println("4) " + ConsoleColors.GREEN + "Green Nature" + ConsoleColors.RESET);
-				System.out.println("5) " + ConsoleColors.PURPLE + "Purple Nature" + ConsoleColors.RESET);
-				System.out.println("6) " + ConsoleColors.CYAN + "Cyan Nature" + ConsoleColors.RESET);
+				System.out.println("4) " + ConsoleColors.GREEN + "Green Flags" + ConsoleColors.RESET);
+				System.out.println("5) " + ConsoleColors.PURPLE + "Purple Flags" + ConsoleColors.RESET);
+				System.out.println("6) " + ConsoleColors.CYAN + "Cyan Flags" + ConsoleColors.RESET);
 				choice = userInput.nextInt();
 				
 				if(choice == 1)
@@ -68,17 +68,17 @@ public class ASCIIRunner
 				
 				if(choice == 4)
 					{
-						viewGreenNature();
+						viewGreenFlags();
 					}
 				
 				if(choice == 5)
 					{
-						viewPurpleNature();
+						viewPurpleFlags();
 					}
 				
 				if(choice == 6)
 					{
-						viewCyanNature();
+						viewCyanFlags();
 					}
 				
 				
@@ -86,7 +86,7 @@ public class ASCIIRunner
 		
 		public static void viewGreenSuperheroes()
 			{
-
+				System.out.println("Captain America");
 				System.out.println(ConsoleColors.GREEN + " ");
 				System.out.println("                                                                              \n" + 
 						"                                         `..--:::::::--..`                                          \n" + 
@@ -140,6 +140,8 @@ public class ASCIIRunner
 						"                                     ```````````````````````````                ");
 				
 				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Wonder Woman" + ConsoleColors.GREEN);
+				System.out.println(" ");
 				System.out.println("                                                                                                    \n" + 
 						"                                        `.:/ossyyyyyyso+/-.                                         \n" + 
 						"                                   `:oymNMMMMMMNm+omNMMMMMMNds+-                                    \n" + 
@@ -176,6 +178,7 @@ public class ASCIIRunner
 						"                                    -/shNMMMMMMNm/sdNMMMMMNmyo:`                                    \n" + 
 						"                                         `-:/+osssssoo+/:.       ");
 				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "The Avengers" + ConsoleColors.GREEN);
 				System.out.println("\n" + 
 						"                                                       ````````                                      \n" + 
 						"                                                     omNNNNNms                                      \n" + 
@@ -210,6 +213,7 @@ public class ASCIIRunner
 		
 		public static void viewPurpleSuperheroes()
 			{
+				System.out.println("Captain America");
 				System.out.println(ConsoleColors.PURPLE + " ");
 				System.out.println("                                                                              \n" + 
 						"                                         `..--:::::::--..`                                          \n" + 
@@ -262,6 +266,8 @@ public class ASCIIRunner
 						"                          `````````....---:://++++++++//::---....``````````                         \n" + 
 						"                                     ```````````````````````````                ");
 				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Wonder Woman" + ConsoleColors.PURPLE);
+				System.out.println(" ");
 				System.out.println("                                                                                                    \n" + 
 						"                                        `.:/ossyyyyyyso+/-.                                         \n" + 
 						"                                   `:oymNMMMMMMNm+omNMMMMMMNds+-                                    \n" + 
@@ -297,6 +303,8 @@ public class ASCIIRunner
 						"                                .+yNMMMMMMMMMMMm:  oMMMMMMMMMMMNds:`                                \n" + 
 						"                                    -/shNMMMMMMNm/sdNMMMMMNmyo:`                                    \n" + 
 						"                                         `-:/+osssssoo+/:.       ");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "The Avengers" + ConsoleColors.PURPLE);
 				System.out.println(" ");
 				System.out.println("\n" + 
 						"                                                       ````````                                      \n" + 
@@ -332,6 +340,7 @@ public class ASCIIRunner
 		
 		public static void viewCyanSuperheroes()
 			{
+				System.out.println("Captain America");
 				System.out.println(ConsoleColors.CYAN + " ");
 				System.out.println("                                                                              \n" + 
 						"                                         `..--:::::::--..`                                          \n" + 
@@ -384,6 +393,8 @@ public class ASCIIRunner
 						"                          `````````....---:://++++++++//::---....``````````                         \n" + 
 						"                                     ```````````````````````````                ");
 				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Wonder Woman" + ConsoleColors.CYAN);
+				System.out.println(" ");
 				System.out.println("                                                                                                    \n" + 
 						"                                        `.:/ossyyyyyyso+/-.                                         \n" + 
 						"                                   `:oymNMMMMMMNm+omNMMMMMMNds+-                                    \n" + 
@@ -420,6 +431,8 @@ public class ASCIIRunner
 						"                                    -/shNMMMMMMNm/sdNMMMMMNmyo:`                                    \n" + 
 						"                                         `-:/+osssssoo+/:.       ");
 				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "The Avengers" + ConsoleColors.CYAN);
+				System.out.println(" ");
 				System.out.println("\n" + 
 						"                                                       ````````                                      \n" + 
 						"                                                     omNNNNNms                                      \n" + 
@@ -452,24 +465,312 @@ public class ASCIIRunner
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 	
-		public static void viewGreenNature()
+		public static void viewGreenFlags()
 			{
+				System.out.println("American Flag");
 				System.out.println(ConsoleColors.GREEN + " ");
-				System.out.println("x ");
+				System.out.println("\n" + 
+						"MMMNMMNNNNNNNNNNNNNmNNNNNNNmmmmmmmmmmmmmmmmdmmmmddddddddddddddddddddddddddddddddddmmmddddddddmmmmmmm\n" + 
+						"MMdohNNNNNh/ymNNNmy:ymmmmms:smmmmms:smmmmds-ymmmdhhhddddhhhhhhhhhhhhhhhhhhhdhddddddddddhhddddddmmmmm\n" + 
+						"MNmmmNNhNNmmdNNhmmdddmmymmhdhmdsmmhdhmdsddhhhdds/::::::::::::://:://///:://////////////////////+++//\n" + 
+						"NNNNNNy/ommmmms/+dmmmmo/ommdddo:odmmmd+:+dddddd+.```````````......``````.................`..........\n" + 
+						"NNdohmNmmmh+ymmmmdy/ymmmmdy/yddmmdy/yddddhs/sddo::-------------::-----:::----::--:::::::::::::::::::\n" + 
+						"NNdyhNNmmmhsymmdmmyoymmdmmyoymddddyoyddhdds+yddhyyyyyyyyysssyyyyyyyyyhhyyyyyyyyyyyyyyhhhhyyyyhhhhhhh\n" + 
+						"NNNNNmy:smmmmmy-odddmds-sdmmmds-oddddho.ohhddddhyyyyyyysyssyyyyysssyyyyyyyyyyyyyyyyyyhhhhhhyyhhhhhhh\n" + 
+						"NNmhmmddhmmymmddhmmymmhdhmdymdhhyddsddyyyhhsdhh+........................................--.....---..\n" + 
+						"Nmy/ommmmms/+dmmmmo:+ddddd+:+ddddd/-+ddhhh/-+hd/``````````  `````````````````````````````````````.``\n" + 
+						"NNmNmmh+ydmmmmy+ymmmddy/sddddds/sdddhhs:shhhhhdo/////::::::::::///:::::::::::::::///////////////////\n" + 
+						"mmmmmmhsymmdmmyoymmdddy+sddhdds+sddhdds+shhyhhhysyyyssssssssssssyssssssssssssssysyyyyyyyyyyyyyyyyhhh\n" + 
+						"mmy:smmmmds-odmmmds-odddddo-oddddho.oddhhy+.ohhysssssssooooosooosoosssoooooooooosssssssssssssssssyyy\n" + 
+						"mmddhmmymmhhhmmymdhhyddsddhhyddsddyyyhdshhsyyhh/`````               ``          ````````````````````\n" + 
+						"Nmmmmms:+dmmddo:+ddddh+-/ddddh+-+ddhhh/./hhhhhh/````                ```           ````` ````````````\n" + 
+						"mmhoymmmddy/yddmdds/sddddds/shhddhs:shhhhho:shhs++++++//++++++////++++++++//+++++++++++++++++++++ooo\n" + 
+						"mmdsymmmddyosdddddy+sddddds+sddddds+sdhhhho+shhyssssssossssssssssssssssssssoosssysssyyyyyyyyyysssyyy\n" + 
+						"hhhhyyyssssyyssssssssssssssssssssssssssssooooooo++++++/++++++++//++++++++++/++++o++++o+++++++++++ooo\n" + 
+						":----...........`````````````````````````` ```````                    ``       `````````````````````\n" + 
+						"-----.............```````````````````````   ```` `                       ``  ``````````````````````.\n" + 
+						"dddddhhhhhhhhhhhyyyyyyyyyyysysssssyssssssossssssssoooooooosssoooooooooooosssooosssssssssssssyyssyyyy\n" + 
+						"dmdddddddddhhhhhhhhhyyyyyyyyyyyyyyyyyyyyssssssyyysssssssssssssssssssssssssssssssssssyyyyyyyyhhyyyyyh\n" + 
+						"ssooooo++oo+++++++++//////+++////////////::////////::::::::///::::::::::://::::::::/:///////+//////+\n" + 
+						":---..-............````.......`````..`````````````````   ```````  `` ``    `   ```````````..``````..\n" + 
+						":/::::-::::::------------------------.....................................................--.....---\n" + 
+						"mmmmdddddddddhddhhhdhhhdddddhhhhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyyysssssyssyyyyyyysyyyyyyyyyyyyyhhhhhhh\n" + 
+						"mmmmmddddddddddddddhddhdddddddddddhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyssssyyyyyyyyyyyyyyyyyyyyyyyyhhyyhhh\n" + 
+						"ssoo+++++++/++++/////////////////:/://::::---:::::-------::::-------------------::--:::::---:::::::/\n" + 
+						"+++//////++/::::::--------------......`````````````````````````````````````````````.....````........\n" + 
+						"yysssosssyysssso+ooo++++++++++///////////:::::::::::::::::::::::::::::::://::///:/:::::////////////+\n" + 
+						"NNmmmmmmNNNNNNNmmmmmmmmmmddmmmmmmddddddddhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdhhhhhhhddddddddddmmm\n" + 
+						"NNNNNNNNNNNNNNNNNNNNmmmmmmmmmmmmmmmmmmddmdddddddddhdhhhhdddddddhhhhhhhhhhhhhhhdddddddddddddddyysyyhd");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Canadian Flag" + ConsoleColors.GREEN);
+				System.out.println(" ");
+				System.out.println("   \n" + 
+						"  ```   ``  `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+    `   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                 +`                `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :y+                `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:           /+/-.syy:.:+o           `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:           .yyyyyyyyyyy/           `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"   ``  ```  `` +yyyyyyyyyyyyyy:       ``   oyyyyyyyyyy`   .       `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   .`  -s:` :yyyyyyyyy+  -o+  `.`  `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:   /ysooyys/`syyyyyyyy--oyysosyo   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   `syyyyyyyssyyyyyyyysyyyyyyyy-   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy: `/syyyyyyyyyyyyyyyyyyyyyyyyyyyyo- `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   `:oyyyyyyyyyyyyyyyyyyyyyyys/.   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"   ``   ``  ```+yyyyyyyyyyyyyy:      `:oyyyyyyyyyyyyyyyyys/.      `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:         +yyyyyyssyyyyyyys.        `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:        .--..`` :. ```..---        `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"``   ``  ```  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ``   \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `://////////////-                                   `/////////////////-");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Irish Flag" + ConsoleColors.GREEN);
+				System.out.println(" ");
+				System.out.println("\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/................................:oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/................................:oooooooooooooooooooooooooooooooos");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
-		public static void viewPurpleNature()
+		public static void viewPurpleFlags()
 			{
+				System.out.println("American Flag");
 				System.out.println(ConsoleColors.PURPLE + " ");
-				System.out.println("x ");
+				System.out.println("\n" + 
+						"MMMNMMNNNNNNNNNNNNNmNNNNNNNmmmmmmmmmmmmmmmmdmmmmddddddddddddddddddddddddddddddddddmmmddddddddmmmmmmm\n" + 
+						"MMdohNNNNNh/ymNNNmy:ymmmmms:smmmmms:smmmmds-ymmmdhhhddddhhhhhhhhhhhhhhhhhhhdhddddddddddhhddddddmmmmm\n" + 
+						"MNmmmNNhNNmmdNNhmmdddmmymmhdhmdsmmhdhmdsddhhhdds/::::::::::::://:://///:://////////////////////+++//\n" + 
+						"NNNNNNy/ommmmms/+dmmmmo/ommdddo:odmmmd+:+dddddd+.```````````......``````.................`..........\n" + 
+						"NNdohmNmmmh+ymmmmdy/ymmmmdy/yddmmdy/yddddhs/sddo::-------------::-----:::----::--:::::::::::::::::::\n" + 
+						"NNdyhNNmmmhsymmdmmyoymmdmmyoymddddyoyddhdds+yddhyyyyyyyyysssyyyyyyyyyhhyyyyyyyyyyyyyyhhhhyyyyhhhhhhh\n" + 
+						"NNNNNmy:smmmmmy-odddmds-sdmmmds-oddddho.ohhddddhyyyyyyysyssyyyyysssyyyyyyyyyyyyyyyyyyhhhhhhyyhhhhhhh\n" + 
+						"NNmhmmddhmmymmddhmmymmhdhmdymdhhyddsddyyyhhsdhh+........................................--.....---..\n" + 
+						"Nmy/ommmmms/+dmmmmo:+ddddd+:+ddddd/-+ddhhh/-+hd/``````````  `````````````````````````````````````.``\n" + 
+						"NNmNmmh+ydmmmmy+ymmmddy/sddddds/sdddhhs:shhhhhdo/////::::::::::///:::::::::::::::///////////////////\n" + 
+						"mmmmmmhsymmdmmyoymmdddy+sddhdds+sddhdds+shhyhhhysyyyssssssssssssyssssssssssssssysyyyyyyyyyyyyyyyyhhh\n" + 
+						"mmy:smmmmds-odmmmds-odddddo-oddddho.oddhhy+.ohhysssssssooooosooosoosssoooooooooosssssssssssssssssyyy\n" + 
+						"mmddhmmymmhhhmmymdhhyddsddhhyddsddyyyhdshhsyyhh/`````               ``          ````````````````````\n" + 
+						"Nmmmmms:+dmmddo:+ddddh+-/ddddh+-+ddhhh/./hhhhhh/````                ```           ````` ````````````\n" + 
+						"mmhoymmmddy/yddmdds/sddddds/shhddhs:shhhhho:shhs++++++//++++++////++++++++//+++++++++++++++++++++ooo\n" + 
+						"mmdsymmmddyosdddddy+sddddds+sddddds+sdhhhho+shhyssssssossssssssssssssssssssoosssysssyyyyyyyyyysssyyy\n" + 
+						"hhhhyyyssssyyssssssssssssssssssssssssssssooooooo++++++/++++++++//++++++++++/++++o++++o+++++++++++ooo\n" + 
+						":----...........`````````````````````````` ```````                    ``       `````````````````````\n" + 
+						"-----.............```````````````````````   ```` `                       ``  ``````````````````````.\n" + 
+						"dddddhhhhhhhhhhhyyyyyyyyyyysysssssyssssssossssssssoooooooosssoooooooooooosssooosssssssssssssyyssyyyy\n" + 
+						"dmdddddddddhhhhhhhhhyyyyyyyyyyyyyyyyyyyyssssssyyysssssssssssssssssssssssssssssssssssyyyyyyyyhhyyyyyh\n" + 
+						"ssooooo++oo+++++++++//////+++////////////::////////::::::::///::::::::::://::::::::/:///////+//////+\n" + 
+						":---..-............````.......`````..`````````````````   ```````  `` ``    `   ```````````..``````..\n" + 
+						":/::::-::::::------------------------.....................................................--.....---\n" + 
+						"mmmmdddddddddhddhhhdhhhdddddhhhhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyyysssssyssyyyyyyysyyyyyyyyyyyyyhhhhhhh\n" + 
+						"mmmmmddddddddddddddhddhdddddddddddhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyssssyyyyyyyyyyyyyyyyyyyyyyyyhhyyhhh\n" + 
+						"ssoo+++++++/++++/////////////////:/://::::---:::::-------::::-------------------::--:::::---:::::::/\n" + 
+						"+++//////++/::::::--------------......`````````````````````````````````````````````.....````........\n" + 
+						"yysssosssyysssso+ooo++++++++++///////////:::::::::::::::::::::::::::::::://::///:/:::::////////////+\n" + 
+						"NNmmmmmmNNNNNNNmmmmmmmmmmddmmmmmmddddddddhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdhhhhhhhddddddddddmmm\n" + 
+						"NNNNNNNNNNNNNNNNNNNNmmmmmmmmmmmmmmmmmmddmdddddddddhdhhhhdddddddhhhhhhhhhhhhhhhdddddddddddddddyysyyhd");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Canadian Flag" + ConsoleColors.PURPLE);
+				System.out.println(" ");
+				System.out.println("   \n" + 
+						"  ```   ``  `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+    `   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                 +`                `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :y+                `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:           /+/-.syy:.:+o           `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:           .yyyyyyyyyyy/           `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"   ``  ```  `` +yyyyyyyyyyyyyy:       ``   oyyyyyyyyyy`   .       `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   .`  -s:` :yyyyyyyyy+  -o+  `.`  `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:   /ysooyys/`syyyyyyyy--oyysosyo   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   `syyyyyyyssyyyyyyyysyyyyyyyy-   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy: `/syyyyyyyyyyyyyyyyyyyyyyyyyyyyo- `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   `:oyyyyyyyyyyyyyyyyyyyyyyys/.   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"   ``   ``  ```+yyyyyyyyyyyyyy:      `:oyyyyyyyyyyyyyyyyys/.      `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:         +yyyyyyssyyyyyyys.        `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:        .--..`` :. ```..---        `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"``   ``  ```  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ``   \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `://////////////-                                   `/////////////////-");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Irish Flag" + ConsoleColors.PURPLE);
+				System.out.println(" ");
+				System.out.println("\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/................................:oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/................................:oooooooooooooooooooooooooooooooos");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 		
-		public static void viewCyanNature()
+		public static void viewCyanFlags()
 			{
+				System.out.println("American Flag");
 				System.out.println(ConsoleColors.CYAN + " ");
-				System.out.println("x ");
+				System.out.println("\n" + 
+						"MMMNMMNNNNNNNNNNNNNmNNNNNNNmmmmmmmmmmmmmmmmdmmmmddddddddddddddddddddddddddddddddddmmmddddddddmmmmmmm\n" + 
+						"MMdohNNNNNh/ymNNNmy:ymmmmms:smmmmms:smmmmds-ymmmdhhhddddhhhhhhhhhhhhhhhhhhhdhddddddddddhhddddddmmmmm\n" + 
+						"MNmmmNNhNNmmdNNhmmdddmmymmhdhmdsmmhdhmdsddhhhdds/::::::::::::://:://///:://////////////////////+++//\n" + 
+						"NNNNNNy/ommmmms/+dmmmmo/ommdddo:odmmmd+:+dddddd+.```````````......``````.................`..........\n" + 
+						"NNdohmNmmmh+ymmmmdy/ymmmmdy/yddmmdy/yddddhs/sddo::-------------::-----:::----::--:::::::::::::::::::\n" + 
+						"NNdyhNNmmmhsymmdmmyoymmdmmyoymddddyoyddhdds+yddhyyyyyyyyysssyyyyyyyyyhhyyyyyyyyyyyyyyhhhhyyyyhhhhhhh\n" + 
+						"NNNNNmy:smmmmmy-odddmds-sdmmmds-oddddho.ohhddddhyyyyyyysyssyyyyysssyyyyyyyyyyyyyyyyyyhhhhhhyyhhhhhhh\n" + 
+						"NNmhmmddhmmymmddhmmymmhdhmdymdhhyddsddyyyhhsdhh+........................................--.....---..\n" + 
+						"Nmy/ommmmms/+dmmmmo:+ddddd+:+ddddd/-+ddhhh/-+hd/``````````  `````````````````````````````````````.``\n" + 
+						"NNmNmmh+ydmmmmy+ymmmddy/sddddds/sdddhhs:shhhhhdo/////::::::::::///:::::::::::::::///////////////////\n" + 
+						"mmmmmmhsymmdmmyoymmdddy+sddhdds+sddhdds+shhyhhhysyyyssssssssssssyssssssssssssssysyyyyyyyyyyyyyyyyhhh\n" + 
+						"mmy:smmmmds-odmmmds-odddddo-oddddho.oddhhy+.ohhysssssssooooosooosoosssoooooooooosssssssssssssssssyyy\n" + 
+						"mmddhmmymmhhhmmymdhhyddsddhhyddsddyyyhdshhsyyhh/`````               ``          ````````````````````\n" + 
+						"Nmmmmms:+dmmddo:+ddddh+-/ddddh+-+ddhhh/./hhhhhh/````                ```           ````` ````````````\n" + 
+						"mmhoymmmddy/yddmdds/sddddds/shhddhs:shhhhho:shhs++++++//++++++////++++++++//+++++++++++++++++++++ooo\n" + 
+						"mmdsymmmddyosdddddy+sddddds+sddddds+sdhhhho+shhyssssssossssssssssssssssssssoosssysssyyyyyyyyyysssyyy\n" + 
+						"hhhhyyyssssyyssssssssssssssssssssssssssssooooooo++++++/++++++++//++++++++++/++++o++++o+++++++++++ooo\n" + 
+						":----...........`````````````````````````` ```````                    ``       `````````````````````\n" + 
+						"-----.............```````````````````````   ```` `                       ``  ``````````````````````.\n" + 
+						"dddddhhhhhhhhhhhyyyyyyyyyyysysssssyssssssossssssssoooooooosssoooooooooooosssooosssssssssssssyyssyyyy\n" + 
+						"dmdddddddddhhhhhhhhhyyyyyyyyyyyyyyyyyyyyssssssyyysssssssssssssssssssssssssssssssssssyyyyyyyyhhyyyyyh\n" + 
+						"ssooooo++oo+++++++++//////+++////////////::////////::::::::///::::::::::://::::::::/:///////+//////+\n" + 
+						":---..-............````.......`````..`````````````````   ```````  `` ``    `   ```````````..``````..\n" + 
+						":/::::-::::::------------------------.....................................................--.....---\n" + 
+						"mmmmdddddddddhddhhhdhhhdddddhhhhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyyysssssyssyyyyyyysyyyyyyyyyyyyyhhhhhhh\n" + 
+						"mmmmmddddddddddddddhddhdddddddddddhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyssssyyyyyyyyyyyyyyyyyyyyyyyyhhyyhhh\n" + 
+						"ssoo+++++++/++++/////////////////:/://::::---:::::-------::::-------------------::--:::::---:::::::/\n" + 
+						"+++//////++/::::::--------------......`````````````````````````````````````````````.....````........\n" + 
+						"yysssosssyysssso+ooo++++++++++///////////:::::::::::::::::::::::::::::::://::///:/:::::////////////+\n" + 
+						"NNmmmmmmNNNNNNNmmmmmmmmmmddmmmmmmddddddddhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdhhhhhhhddddddddddmmm\n" + 
+						"NNNNNNNNNNNNNNNNNNNNmmmmmmmmmmmmmmmmmmddmdddddddddhdhhhhdddddddhhhhhhhhhhhhhhhdddddddddddddddyysyyhd");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Canadian Flag" + ConsoleColors.CYAN);
+				System.out.println(" ");
+				System.out.println("   \n" + 
+						"  ```   ``  `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+    `   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                 +`                `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :y+                `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:           /+/-.syy:.:+o           `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:           .yyyyyyyyyyy/           `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"   ``  ```  `` +yyyyyyyyyyyyyy:       ``   oyyyyyyyyyy`   .       `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   .`  -s:` :yyyyyyyyy+  -o+  `.`  `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:   /ysooyys/`syyyyyyyy--oyysosyo   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   `syyyyyyyssyyyyyyyysyyyyyyyy-   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy: `/syyyyyyyyyyyyyyyyyyyyyyyyyyyyo- `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:   `:oyyyyyyyyyyyyyyyyyyyyyyys/.   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"   ``   ``  ```+yyyyyyyyyyyyyy:      `:oyyyyyyyyyyyyyyyyys/.      `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:         +yyyyyyssyyyyyyys.        `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:        .--..`` :. ```..---        `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"  ```  ```  `` +yyyyyyyyyyyyyy:                :.                 `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ```  \n" + 
+						"``   ``  ```  `+yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+ ``  ```  ``   \n" + 
+						"  ```  ``   `` +yyyyyyyyyyyyyy:                                   `yyyyyyyyyyyyyyyyy+`  ``   ``   ``\n" + 
+						"``   ``   ``  `://////////////-                                   `/////////////////-");
+				System.out.println(" ");
+				System.out.println(ConsoleColors.WHITE + "Irish Flag" + ConsoleColors.CYAN);
+				System.out.println(" ");
+				System.out.println("\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/................................:oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:                                -oooooooooooooooooooooooooooooooos\n" + 
+						"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/................................:oooooooooooooooooooooooooooooooos");
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 					
