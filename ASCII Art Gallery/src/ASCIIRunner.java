@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ASCIIRunner
 	{
 
-	//This version is up to date as of Saturday, February 20, 2021!
+	//This version is up to date as of Monday, February 22, 2021!
 	
 		static Scanner userInput = new Scanner(System.in);
 		static int choice = 0;
@@ -12,7 +12,7 @@ public class ASCIIRunner
 			{
 				// Goals:
 				// 1) Let user choose color they want to see the ASCII art in (Completed)
-				// 2) Have at least 3 categories of pictures for them to look through
+				// 2) Have at least 3 categories of pictures for them to look through (Completed)
 				// 3) If time, add a randomized color option
 
 				greetUser();
@@ -49,6 +49,9 @@ public class ASCIIRunner
 				System.out.println("4) " + ConsoleColors.GREEN + "Green Flags" + ConsoleColors.RESET);
 				System.out.println("5) " + ConsoleColors.PURPLE + "Purple Flags" + ConsoleColors.RESET);
 				System.out.println("6) " + ConsoleColors.CYAN + "Cyan Flags" + ConsoleColors.RESET);
+				System.out.println("7) " + ConsoleColors.GREEN + "Green Disney" + ConsoleColors.RESET);
+				System.out.println("8) " + ConsoleColors.PURPLE + "Purple Disney" + ConsoleColors.RESET);
+				System.out.println("9) " + ConsoleColors.CYAN + "Cyan Disney" + ConsoleColors.RESET);
 				choice = userInput.nextInt();
 				
 				if(choice == 1)
@@ -79,6 +82,21 @@ public class ASCIIRunner
 				if(choice == 6)
 					{
 						viewCyanFlags();
+					}
+				
+				if(choice == 7)
+					{
+						viewGreenDisney();
+					}
+				
+				if(choice == 8)
+					{
+						viewPurpleDisney();
+					}
+				
+				if(choice == 9)
+					{
+						viewCyanDisney();
 					}
 				
 				
@@ -774,6 +792,480 @@ public class ASCIIRunner
 				System.out.println(ConsoleColors.RESET + " ");
 			}
 					
+		public static void viewGreenDisney()
+			{
+				System.out.println("Mickey Mouse");
+				System.out.println(ConsoleColors.GREEN + "                                       ```                                                          \n" + 
+						"                                  `-/oyhhhyso/-                                                     \n" + 
+						"                               `:shhdhddddddddhs:                                                   \n" + 
+						"                              :yhhddddddddddddddh/                                                  \n" + 
+						"                             :yhdddddddddddddddddd.                                                 \n" + 
+						"                             yhhdddddddddddddddddd-                                                 \n" + 
+						"                             hhddddddddddddddddddy`                                                 \n" + 
+						"                             shddddddddddddmddddy.                                                  \n" + 
+						"                             `sdddddddddmdddddmmdhyyso/:.`                                          \n" + 
+						"                    `-/osyyso:-:shddddmmmmdddmmdo-...-/oyho-`                                       \n" + 
+						"                  `/yhhhhhhdhdhs-.-+dmmmmmmdmmd-        `:sso-                                      \n" + 
+						"                 -shhhhhhhhdddddh:.ymmmmmmmmmds         .yy:`y/                                     \n" + 
+						"                .yhhhhhhhdddddddddhmmmmmmmmmmdo         /mmd-mm:                                    \n" + 
+						"                ohhhhhddddddddddddmmmmmmmmmmmmh`        /mmmhmmh`     `+yys-                        \n" + 
+						"                yhhhhdddddddddddmmmmmho/-.--+yd/        :mmmdhmm-.-.``ymmmmh                        \n" + 
+						"                shhhdddddddddddddmmy:`       `:y`       .mmmh-ddo+//osmmmmmo                        \n" + 
+						"                /hhdddddddddddddmms`     `..`  ./`       +dh:./.`   +mmmmdo`                        \n" + 
+						"                `+hdddddddddddddhm/     :+/.`   `:`       .. `     `dmmms-                          \n" + 
+						"                 `:yddddddddddy:.d/     ``:o-`    `                 .:+d`                           \n" + 
+						"                   `/oyhhhhyo:`  :y.       .yy/.                    `-h/                            \n" + 
+						"                      `....`      :s:`      .dmdy+-.`           `.-/os:                             \n" + 
+						"                                   .+o:`  `  yyhmmmdhs+/:-::///+++/-.                               \n" + 
+						"                                     ./o+:-+`//`-ohsdmmmoommmdy+:.`                                 \n" + 
+						"                                       `-ddmh/+/.`.`+mh+/mmmmmNNmdhs/-.`                            \n" + 
+						"                                        +mmmmmhs++++o++hmNNmNNNmNNNNNm++/-`                         \n" + 
+						"                                        hmmmmmmNmdhhdmNNmNNNNNNNNNNNmo` .:o.                        \n" + 
+						"                                       `mmmmmhhmNmNNNNNNmNNNNNNNNNNd/.oyy+-s.                       \n" + 
+						"                                       -mmmmm+`:dmNNNNNNNNNmmNNNNdo. sNNNNo-y                       \n" + 
+						"                                       +mmmmm. :h:+syhdddmmddhyo//:-.hNNNNm`y.                      \n" + 
+						"                                       smmmmd `d-    ``...-..` -hNNNdhNNNNm`s/                      \n" + 
+						"                                       dmmmmd :y               hNNNNNmommd/ y/:.`                   \n" + 
+						"                                      `mmmmmmosy              `mNNNNNm`.-. `h`.y`                   \n" + 
+						"                                       dmmmmmmmm.              sNNNNNo    `o:.s.                    \n" + 
+						"                                       :hmmmmmmms`             `/hdh+`  `:o--o.                     \n" + 
+						"                                        `:/+ooosso.               `   `.:/./+`                      \n" + 
+						"                           ``                 `+:oy:..`            `.:o/.:+-                        \n" + 
+						"                      `.:/++++/-`             `d+--/mdhs/-`.....-:+os+/sd/                          \n" + 
+						"                    `:syo:`` `.:o/`            .+oshNNNNmooyy+hm++yydmNNh                           \n" + 
+						"                   .s/..:o+.    `/s.            `:dNNNNmy:--odmo   hNNNN+                           \n" + 
+						"                   o/     :y:     .s.          .ommNNNd/.-:/+my`  `mNNNN:                           \n" + 
+						"                   h`      -h-     -s        `+dmNNNmy.     oh.   -NNNNN.                           \n" + 
+						"                   h`       :y      o-    `.+hmmNmmh/`    `/y.    /NNNNN-      ``````               \n" + 
+						"                   s:        s      .y/:-/sdmmmmmmo`     `oy.`.:/+syhhhhs+o/-///////++/.`           \n" + 
+						"                   -s`       /`      /o.:smmmmmmy-      .so``o:.`        `+y:.       `-+s-          \n" + 
+						"           .        /+`      ..      `+:``/mmds-      `/y/:/ss.``````.-:++/`            :d`         \n" + 
+						"           -`        ++`      -`.       .+`ss.      `:sds+-.`.//++////:.`               .d          \n" + 
+						"           `--`       :o.      `-`       .+y.    `.+o/h/`                              .y:          \n" + 
+						"             `-:-``    .o/`     `/.       `+/`.:/+/. :y                             ``/o-           \n" + 
+						"                `-----.``:s/` ``.+s/.       yo/-`    .h-                         `.///-             \n" + 
+						"                     `.-::+dh+//:` `/+.    `y.        .oo:-``````````````````.-//::`                \n" + 
+						"                           `:/-`     .h. `.o/           `-/////+++++++++///::-.`                    \n" + 
+						"                              -:/:.``-ds+//.                                                        \n" + 
+						"                                 `-:::.`                           ");
+				System.out.println(ConsoleColors.RESET + " ");
+				System.out.println("Donald Duck");
+				System.out.println(ConsoleColors.GREEN + "   --.:                .:++o+`                                        \n" + 
+						"                                -. ..       ....`.:+yyyyyyhhs/`                                     \n" + 
+						"                                `:  /.     `yyyyyyyyyyyyyy/+dhy`                                    \n" + 
+						"                               --`   +      `/oyo/hsyhmd/`  `s``                                    \n" + 
+						"                            -::`     /``++:   :+.``.-..s..`  .                                      \n" + 
+						"                          :/-.. ....`.: ++o+ .+.  .--.-:`-:`                                        \n" + 
+						"                         /::-.```  `  + `/y+/ys  -.```:- `:.                                        \n" + 
+						"                         -:......./- `y:  `+//+--..::-.  :.                                         \n" + 
+						"                          `       yo.oys`  .o://+-dNy/:::.          ``                              \n" + 
+						"                                  hyyyoss` :s+/+++ys+o+/`         .-`:`                             \n" + 
+						"                                  +s++syyo`/o:/o+o+:-.`      ....-. ./                              \n" + 
+						"                                  `syyyyyyss++os/-`       `.:.`   :.`                               \n" + 
+						"                                   `syyhhho:-oyy:`   `.-//..`..`  ./                                \n" + 
+						"                                    `yhdhd+shyssysssy/oyy` ``  ` ``-:                               \n" + 
+						"                                    `yyhhdhyssyyyyyys:yyy:+s:-.``--::-                              \n" + 
+						"                                    `/hyydyhyyyyyyyys:oyyy+.  `.-..:-/                              \n" + 
+						"                                     :yyyhyhyyyyhhhhh+//-.    ``-.-:.-                              \n" + 
+						"                                     ooyyyyssyyyyyydy```.-::---./   `                               \n" + 
+						"                                     :+yyyh/:syyyyyh+      `.  .-                                   \n" + 
+						"                                      +yyyys+syyyys:           /-                                   \n" + 
+						"                                       :ssyyyysso:`          `:-                                    \n" + 
+						"                                         .//:--`            `-`                                     \n" + 
+						"                                     ````-///:.``        `.:+:                                      \n" + 
+						"                                  .::////s///++++/::----:/+::o-                                     \n" + 
+						"                                  /::::::/+///::/+.  `````-+::o                                     \n" + 
+						"                                 -/:://///:::///+/`   .///+:/+/--.`                                 \n" + 
+						"                                 `.---------...`      ./:::///:::////:-                             \n" + 
+						"                                                       .+/::::::::::::/:                            \n" + 
+						"                                                         :+/:::::::::+.                             \n" + 
+						"                                                          `:/+//+/:::.    ");
+				System.out.println(ConsoleColors.RESET + " ");
+				System.out.println("Goofy");
+				System.out.println(ConsoleColors.GREEN + "                                                                                                    \n" + 
+						"                                                                   .--`                             \n" + 
+						"                 ://///-                                          +.`.:/-                           \n" + 
+						"                :/-----::          `  `.`                         /:   `/-      `.-:::::::::::--    \n" + 
+						"                /:----::o.        -` -.                            /:    o.::://:-````        ``+   \n" + 
+						"               `//------:oyo----- : -.`...`                         :- `:/-````-::::::-:---------   \n" + 
+						"              `+-------/mNMd+---o-..::-`           :syo.            ./       :/.``   ``//``````     \n" + 
+						"              -+----:--mMN+-----:yhddmNd+`        `NMMMy            /.       +`.-:::::::+           \n" + 
+						"               /////+::ym+------:NMyoym+o+`      ./NMMMs            s  ---.` .o-`     `-/           \n" + 
+						"                `..``  `+------smhNo  .:.`:-   `/::NMNs::           s :-      -:-----`-/.           \n" + 
+						"                        .::/::sMMNNN:   ``.::`.+.``:/-``/.`         :/-`       ``.-:::.`            \n" + 
+						"                             `sMNMMMN+y/``s+o/-/````````-.:`         +/`      `.-/-.                \n" + 
+						"                              .ddmNNhsyh/-/:/`..`````.-.-:o          /:` `-:::o.`                   \n" + 
+						"                               .ydNh-:-.--`..```````.:-o-:/          -oos+//+o/`                    \n" + 
+						"                               -y.-:/-.-::.``````.-:/` .-.`         `s++NMMMm+oo.                   \n" + 
+						"                             `+d-   y+:.:mmdhyyys::::               `++odNNNmo+o:                   \n" + 
+						"                           .+dh-   :N-`/`oNmmMMMNh:+                 `s+ooooo+os`                   \n" + 
+						"                `.....--/ohmd+`   -md  /..s::ohoym:s-.               `o++++++++s                    \n" + 
+						"               `odmmNNNNmhs:`   `/mN-  -:`./:-::-+:yoo:               .ysoooooy:                    \n" + 
+						"                `.-:::--.     `:hNm:   `+`..:/::://yoso///:-..``      `h++ooo+y                     \n" + 
+						"                             `sdh+.``.-/s:.-:-:::/o+oho+++++oo+++//::-:h++++++y                     \n" + 
+						"                              ...:/++o+++o++yyooo++++odh+++++++++++++ooy++++++y                     \n" + 
+						"                      ``.-::/+++o+++++++++++yNyoossssosNdo+++++++++++++o++++++y                     \n" + 
+						"                    -/+ooo+++++++++++++++++++mNo+++++++ydm///+ooo++++++++++++++                     \n" + 
+						"                   :o++++++++++++++++o+/so+++hMm++++++++oyy`   `.-::/+ooo++++o.                     \n" + 
+						"                   :o+++++++os+o+/:-`  .s++++hMMs+++++++s`m/            `.--.                       \n" + 
+						"                   `s+++++++ss-`       so++++dMMd+++++++y`om`                                       \n" + 
+						"              `     .s++++++so/.      -Ns+++oNMMN+++++++y`-M/                                       \n" + 
+						"            `/--/:.` `o+++++os+o     `dMmo+smMMMN+++++++y`oMd                                       \n" + 
+						"            /:` `o./-`soooooo+oo:   `yMMMMMMMMMMNo++++++mNMMM-                                      \n" + 
+						"           ::.+. /: /--oo++++++o+.:/oNMMMMMMMMMMN++++++hMMMMMo                                      \n" + 
+						"           o  `o  o``/:`sooooydh:ysy+oNMMMMMMMMMN+++++sNMMMMMd                                      \n" + 
+						"           o`  /:-/+:--:s`-mMMMh`:yo+++hMMMMMMMMm++++sNMMMMMMM.                                     \n" + 
+						"           .+  `:.      -+``-:-` +sy++++odNMMMMMh+++yNMMMMMMMMo                                     \n" + 
+						"            -+`          `:::::+syssy++++++ydNMMs++s-/ymMMMMMMm`                                    \n" + 
+						"             `/:`     .----.-/yssysssyo+++++++os+o+`   `.:+oyyy:                                    \n" + 
+						"               `:::--/::oo+yysyyssssssyyo++++++os.                                                  \n" + 
+						"                   `+yssssssssssyysssssssysoo+syy.                                                  \n" + 
+						"                   `yssssssssssssyyyssssssssssyys`                                                  \n" + 
+						"                   .hsssssssssssssssyyysssssssyy:                                                   \n" + 
+						"                   .hssssssssssssssssssyyyyyyyyss-                            `-::-`                \n" + 
+						"                   `hsssssssssssssssssssssssssssss-                         `+yyhhhh+               \n" + 
+						"                    yssssssssssssssssssssssssssssss.                       -yhhhhdddd+              \n" + 
+						"                    :yssssssssssssssssssssssssssssss.                     .hhhhhddmmmm`             \n" + 
+						"                    `ysssssssssssssssssssssssssssssss.                   `yhhhhhdmmmmm:             \n" + 
+						"                     :ysssssssssssssssssssssssssssssss.                  :hhhhhddmmmmm/             \n" + 
+						"                      sssssssssssssyy+ossssssssssssssss-                 shhhhhdmmmmmm-             \n" + 
+						"                      .yssssssssssssy.`-+sssssssssssssss:               `hhhhhdmmmmmdd`             \n" + 
+						"                       :ysssssssssssy`   ./sssssssssssssy/`             -hhhhhdmmmmmmo              \n" + 
+						"                        +yssssssssssy`     ./ssssssssssssso.           `shhhhdmmmmdmd`              \n" + 
+						"                        `sssssssssssy.       `/sssssssssssss:`         /dhhhhmdmmdmm:               \n" + 
+						"                         .ysssssssssy:         `/sssssssssssy+.       -hhhhhdmmdmmd+                \n" + 
+						"                          -ysssssssss+           .+sssssssyssss/`    -hhhhhdmmmdmd+                 \n" + 
+						"                           /ssssssssso             .+sssyssssyyyy/` :hhhhhddmmmmd/                  \n" + 
+						"                           `ssysyyyysy               -oyssshmNNmyysohhhhhddmmmdy-                   \n" + 
+						"                            .sssssssyy`                :sshydNMNdhhhhhhhdmdddh/`                    \n" + 
+						"                             `-+smmNNy/-`               `/yssymhhdhhhhhddddm+`                      \n" + 
+						"                             `shhdmmmhhhs`                `--+hhdhhhhhdddddd/                       \n" + 
+						"     ````..----...``````.-:/oshhhhhhhhhhho:`                 `odhhhhhhdmmmdo`                       \n" + 
+						"   ./osyhhhhhhhhhhyyyyhhhhhhhhhhhhhhhhhhhhh+                  `hhhhhdmmmdy:                         \n" + 
+						"  +hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy`                  -ohhdmdds:                           \n" + 
+						"  ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs/.                     `:oo/.                             \n" + 
+						"   -ohhhhhhhhhhhhhhhhhhhhhhhhhhhso//++/-`                                                           \n" + 
+						"      .:+osyhhhyyyyyhhysso+/:-`                                                                     \n" + 
+						"                                ");
+				System.out.println(ConsoleColors.RESET + " ");
+			}
+		
+		public static void viewPurpleDisney()
+			{
+				System.out.println("Mickey Mouse");
+				System.out.println(ConsoleColors.PURPLE + "                                       ```                                                          \n" + 
+						"                                  `-/oyhhhyso/-                                                     \n" + 
+						"                               `:shhdhddddddddhs:                                                   \n" + 
+						"                              :yhhddddddddddddddh/                                                  \n" + 
+						"                             :yhdddddddddddddddddd.                                                 \n" + 
+						"                             yhhdddddddddddddddddd-                                                 \n" + 
+						"                             hhddddddddddddddddddy`                                                 \n" + 
+						"                             shddddddddddddmddddy.                                                  \n" + 
+						"                             `sdddddddddmdddddmmdhyyso/:.`                                          \n" + 
+						"                    `-/osyyso:-:shddddmmmmdddmmdo-...-/oyho-`                                       \n" + 
+						"                  `/yhhhhhhdhdhs-.-+dmmmmmmdmmd-        `:sso-                                      \n" + 
+						"                 -shhhhhhhhdddddh:.ymmmmmmmmmds         .yy:`y/                                     \n" + 
+						"                .yhhhhhhhdddddddddhmmmmmmmmmmdo         /mmd-mm:                                    \n" + 
+						"                ohhhhhddddddddddddmmmmmmmmmmmmh`        /mmmhmmh`     `+yys-                        \n" + 
+						"                yhhhhdddddddddddmmmmmho/-.--+yd/        :mmmdhmm-.-.``ymmmmh                        \n" + 
+						"                shhhdddddddddddddmmy:`       `:y`       .mmmh-ddo+//osmmmmmo                        \n" + 
+						"                /hhdddddddddddddmms`     `..`  ./`       +dh:./.`   +mmmmdo`                        \n" + 
+						"                `+hdddddddddddddhm/     :+/.`   `:`       .. `     `dmmms-                          \n" + 
+						"                 `:yddddddddddy:.d/     ``:o-`    `                 .:+d`                           \n" + 
+						"                   `/oyhhhhyo:`  :y.       .yy/.                    `-h/                            \n" + 
+						"                      `....`      :s:`      .dmdy+-.`           `.-/os:                             \n" + 
+						"                                   .+o:`  `  yyhmmmdhs+/:-::///+++/-.                               \n" + 
+						"                                     ./o+:-+`//`-ohsdmmmoommmdy+:.`                                 \n" + 
+						"                                       `-ddmh/+/.`.`+mh+/mmmmmNNmdhs/-.`                            \n" + 
+						"                                        +mmmmmhs++++o++hmNNmNNNmNNNNNm++/-`                         \n" + 
+						"                                        hmmmmmmNmdhhdmNNmNNNNNNNNNNNmo` .:o.                        \n" + 
+						"                                       `mmmmmhhmNmNNNNNNmNNNNNNNNNNd/.oyy+-s.                       \n" + 
+						"                                       -mmmmm+`:dmNNNNNNNNNmmNNNNdo. sNNNNo-y                       \n" + 
+						"                                       +mmmmm. :h:+syhdddmmddhyo//:-.hNNNNm`y.                      \n" + 
+						"                                       smmmmd `d-    ``...-..` -hNNNdhNNNNm`s/                      \n" + 
+						"                                       dmmmmd :y               hNNNNNmommd/ y/:.`                   \n" + 
+						"                                      `mmmmmmosy              `mNNNNNm`.-. `h`.y`                   \n" + 
+						"                                       dmmmmmmmm.              sNNNNNo    `o:.s.                    \n" + 
+						"                                       :hmmmmmmms`             `/hdh+`  `:o--o.                     \n" + 
+						"                                        `:/+ooosso.               `   `.:/./+`                      \n" + 
+						"                           ``                 `+:oy:..`            `.:o/.:+-                        \n" + 
+						"                      `.:/++++/-`             `d+--/mdhs/-`.....-:+os+/sd/                          \n" + 
+						"                    `:syo:`` `.:o/`            .+oshNNNNmooyy+hm++yydmNNh                           \n" + 
+						"                   .s/..:o+.    `/s.            `:dNNNNmy:--odmo   hNNNN+                           \n" + 
+						"                   o/     :y:     .s.          .ommNNNd/.-:/+my`  `mNNNN:                           \n" + 
+						"                   h`      -h-     -s        `+dmNNNmy.     oh.   -NNNNN.                           \n" + 
+						"                   h`       :y      o-    `.+hmmNmmh/`    `/y.    /NNNNN-      ``````               \n" + 
+						"                   s:        s      .y/:-/sdmmmmmmo`     `oy.`.:/+syhhhhs+o/-///////++/.`           \n" + 
+						"                   -s`       /`      /o.:smmmmmmy-      .so``o:.`        `+y:.       `-+s-          \n" + 
+						"           .        /+`      ..      `+:``/mmds-      `/y/:/ss.``````.-:++/`            :d`         \n" + 
+						"           -`        ++`      -`.       .+`ss.      `:sds+-.`.//++////:.`               .d          \n" + 
+						"           `--`       :o.      `-`       .+y.    `.+o/h/`                              .y:          \n" + 
+						"             `-:-``    .o/`     `/.       `+/`.:/+/. :y                             ``/o-           \n" + 
+						"                `-----.``:s/` ``.+s/.       yo/-`    .h-                         `.///-             \n" + 
+						"                     `.-::+dh+//:` `/+.    `y.        .oo:-``````````````````.-//::`                \n" + 
+						"                           `:/-`     .h. `.o/           `-/////+++++++++///::-.`                    \n" + 
+						"                              -:/:.``-ds+//.                                                        \n" + 
+						"                                 `-:::.`                           ");
+				System.out.println(ConsoleColors.RESET + " ");
+				System.out.println("Donald Duck");
+				System.out.println(ConsoleColors.PURPLE + "   --.:                .:++o+`                                        \n" + 
+						"                                -. ..       ....`.:+yyyyyyhhs/`                                     \n" + 
+						"                                `:  /.     `yyyyyyyyyyyyyy/+dhy`                                    \n" + 
+						"                               --`   +      `/oyo/hsyhmd/`  `s``                                    \n" + 
+						"                            -::`     /``++:   :+.``.-..s..`  .                                      \n" + 
+						"                          :/-.. ....`.: ++o+ .+.  .--.-:`-:`                                        \n" + 
+						"                         /::-.```  `  + `/y+/ys  -.```:- `:.                                        \n" + 
+						"                         -:......./- `y:  `+//+--..::-.  :.                                         \n" + 
+						"                          `       yo.oys`  .o://+-dNy/:::.          ``                              \n" + 
+						"                                  hyyyoss` :s+/+++ys+o+/`         .-`:`                             \n" + 
+						"                                  +s++syyo`/o:/o+o+:-.`      ....-. ./                              \n" + 
+						"                                  `syyyyyyss++os/-`       `.:.`   :.`                               \n" + 
+						"                                   `syyhhho:-oyy:`   `.-//..`..`  ./                                \n" + 
+						"                                    `yhdhd+shyssysssy/oyy` ``  ` ``-:                               \n" + 
+						"                                    `yyhhdhyssyyyyyys:yyy:+s:-.``--::-                              \n" + 
+						"                                    `/hyydyhyyyyyyyys:oyyy+.  `.-..:-/                              \n" + 
+						"                                     :yyyhyhyyyyhhhhh+//-.    ``-.-:.-                              \n" + 
+						"                                     ooyyyyssyyyyyydy```.-::---./   `                               \n" + 
+						"                                     :+yyyh/:syyyyyh+      `.  .-                                   \n" + 
+						"                                      +yyyys+syyyys:           /-                                   \n" + 
+						"                                       :ssyyyysso:`          `:-                                    \n" + 
+						"                                         .//:--`            `-`                                     \n" + 
+						"                                     ````-///:.``        `.:+:                                      \n" + 
+						"                                  .::////s///++++/::----:/+::o-                                     \n" + 
+						"                                  /::::::/+///::/+.  `````-+::o                                     \n" + 
+						"                                 -/:://///:::///+/`   .///+:/+/--.`                                 \n" + 
+						"                                 `.---------...`      ./:::///:::////:-                             \n" + 
+						"                                                       .+/::::::::::::/:                            \n" + 
+						"                                                         :+/:::::::::+.                             \n" + 
+						"                                                          `:/+//+/:::.    ");
+				System.out.println(ConsoleColors.RESET + " ");
+				System.out.println("Goofy");
+				System.out.println(ConsoleColors.PURPLE + "                                                                                                    \n" + 
+						"                                                                   .--`                             \n" + 
+						"                 ://///-                                          +.`.:/-                           \n" + 
+						"                :/-----::          `  `.`                         /:   `/-      `.-:::::::::::--    \n" + 
+						"                /:----::o.        -` -.                            /:    o.::://:-````        ``+   \n" + 
+						"               `//------:oyo----- : -.`...`                         :- `:/-````-::::::-:---------   \n" + 
+						"              `+-------/mNMd+---o-..::-`           :syo.            ./       :/.``   ``//``````     \n" + 
+						"              -+----:--mMN+-----:yhddmNd+`        `NMMMy            /.       +`.-:::::::+           \n" + 
+						"               /////+::ym+------:NMyoym+o+`      ./NMMMs            s  ---.` .o-`     `-/           \n" + 
+						"                `..``  `+------smhNo  .:.`:-   `/::NMNs::           s :-      -:-----`-/.           \n" + 
+						"                        .::/::sMMNNN:   ``.::`.+.``:/-``/.`         :/-`       ``.-:::.`            \n" + 
+						"                             `sMNMMMN+y/``s+o/-/````````-.:`         +/`      `.-/-.                \n" + 
+						"                              .ddmNNhsyh/-/:/`..`````.-.-:o          /:` `-:::o.`                   \n" + 
+						"                               .ydNh-:-.--`..```````.:-o-:/          -oos+//+o/`                    \n" + 
+						"                               -y.-:/-.-::.``````.-:/` .-.`         `s++NMMMm+oo.                   \n" + 
+						"                             `+d-   y+:.:mmdhyyys::::               `++odNNNmo+o:                   \n" + 
+						"                           .+dh-   :N-`/`oNmmMMMNh:+                 `s+ooooo+os`                   \n" + 
+						"                `.....--/ohmd+`   -md  /..s::ohoym:s-.               `o++++++++s                    \n" + 
+						"               `odmmNNNNmhs:`   `/mN-  -:`./:-::-+:yoo:               .ysoooooy:                    \n" + 
+						"                `.-:::--.     `:hNm:   `+`..:/::://yoso///:-..``      `h++ooo+y                     \n" + 
+						"                             `sdh+.``.-/s:.-:-:::/o+oho+++++oo+++//::-:h++++++y                     \n" + 
+						"                              ...:/++o+++o++yyooo++++odh+++++++++++++ooy++++++y                     \n" + 
+						"                      ``.-::/+++o+++++++++++yNyoossssosNdo+++++++++++++o++++++y                     \n" + 
+						"                    -/+ooo+++++++++++++++++++mNo+++++++ydm///+ooo++++++++++++++                     \n" + 
+						"                   :o++++++++++++++++o+/so+++hMm++++++++oyy`   `.-::/+ooo++++o.                     \n" + 
+						"                   :o+++++++os+o+/:-`  .s++++hMMs+++++++s`m/            `.--.                       \n" + 
+						"                   `s+++++++ss-`       so++++dMMd+++++++y`om`                                       \n" + 
+						"              `     .s++++++so/.      -Ns+++oNMMN+++++++y`-M/                                       \n" + 
+						"            `/--/:.` `o+++++os+o     `dMmo+smMMMN+++++++y`oMd                                       \n" + 
+						"            /:` `o./-`soooooo+oo:   `yMMMMMMMMMMNo++++++mNMMM-                                      \n" + 
+						"           ::.+. /: /--oo++++++o+.:/oNMMMMMMMMMMN++++++hMMMMMo                                      \n" + 
+						"           o  `o  o``/:`sooooydh:ysy+oNMMMMMMMMMN+++++sNMMMMMd                                      \n" + 
+						"           o`  /:-/+:--:s`-mMMMh`:yo+++hMMMMMMMMm++++sNMMMMMMM.                                     \n" + 
+						"           .+  `:.      -+``-:-` +sy++++odNMMMMMh+++yNMMMMMMMMo                                     \n" + 
+						"            -+`          `:::::+syssy++++++ydNMMs++s-/ymMMMMMMm`                                    \n" + 
+						"             `/:`     .----.-/yssysssyo+++++++os+o+`   `.:+oyyy:                                    \n" + 
+						"               `:::--/::oo+yysyyssssssyyo++++++os.                                                  \n" + 
+						"                   `+yssssssssssyysssssssysoo+syy.                                                  \n" + 
+						"                   `yssssssssssssyyyssssssssssyys`                                                  \n" + 
+						"                   .hsssssssssssssssyyysssssssyy:                                                   \n" + 
+						"                   .hssssssssssssssssssyyyyyyyyss-                            `-::-`                \n" + 
+						"                   `hsssssssssssssssssssssssssssss-                         `+yyhhhh+               \n" + 
+						"                    yssssssssssssssssssssssssssssss.                       -yhhhhdddd+              \n" + 
+						"                    :yssssssssssssssssssssssssssssss.                     .hhhhhddmmmm`             \n" + 
+						"                    `ysssssssssssssssssssssssssssssss.                   `yhhhhhdmmmmm:             \n" + 
+						"                     :ysssssssssssssssssssssssssssssss.                  :hhhhhddmmmmm/             \n" + 
+						"                      sssssssssssssyy+ossssssssssssssss-                 shhhhhdmmmmmm-             \n" + 
+						"                      .yssssssssssssy.`-+sssssssssssssss:               `hhhhhdmmmmmdd`             \n" + 
+						"                       :ysssssssssssy`   ./sssssssssssssy/`             -hhhhhdmmmmmmo              \n" + 
+						"                        +yssssssssssy`     ./ssssssssssssso.           `shhhhdmmmmdmd`              \n" + 
+						"                        `sssssssssssy.       `/sssssssssssss:`         /dhhhhmdmmdmm:               \n" + 
+						"                         .ysssssssssy:         `/sssssssssssy+.       -hhhhhdmmdmmd+                \n" + 
+						"                          -ysssssssss+           .+sssssssyssss/`    -hhhhhdmmmdmd+                 \n" + 
+						"                           /ssssssssso             .+sssyssssyyyy/` :hhhhhddmmmmd/                  \n" + 
+						"                           `ssysyyyysy               -oyssshmNNmyysohhhhhddmmmdy-                   \n" + 
+						"                            .sssssssyy`                :sshydNMNdhhhhhhhdmdddh/`                    \n" + 
+						"                             `-+smmNNy/-`               `/yssymhhdhhhhhddddm+`                      \n" + 
+						"                             `shhdmmmhhhs`                `--+hhdhhhhhdddddd/                       \n" + 
+						"     ````..----...``````.-:/oshhhhhhhhhhho:`                 `odhhhhhhdmmmdo`                       \n" + 
+						"   ./osyhhhhhhhhhhyyyyhhhhhhhhhhhhhhhhhhhhh+                  `hhhhhdmmmdy:                         \n" + 
+						"  +hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy`                  -ohhdmdds:                           \n" + 
+						"  ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs/.                     `:oo/.                             \n" + 
+						"   -ohhhhhhhhhhhhhhhhhhhhhhhhhhhso//++/-`                                                           \n" + 
+						"      .:+osyhhhyyyyyhhysso+/:-`                                                                     \n" + 
+						"                                ");
+				System.out.println(ConsoleColors.RESET + " ");
+			}
+		
+		public static void viewCyanDisney()
+		{
+			System.out.println("Mickey Mouse");
+			System.out.println(ConsoleColors.CYAN + "                                       ```                                                          \n" + 
+					"                                  `-/oyhhhyso/-                                                     \n" + 
+					"                               `:shhdhddddddddhs:                                                   \n" + 
+					"                              :yhhddddddddddddddh/                                                  \n" + 
+					"                             :yhdddddddddddddddddd.                                                 \n" + 
+					"                             yhhdddddddddddddddddd-                                                 \n" + 
+					"                             hhddddddddddddddddddy`                                                 \n" + 
+					"                             shddddddddddddmddddy.                                                  \n" + 
+					"                             `sdddddddddmdddddmmdhyyso/:.`                                          \n" + 
+					"                    `-/osyyso:-:shddddmmmmdddmmdo-...-/oyho-`                                       \n" + 
+					"                  `/yhhhhhhdhdhs-.-+dmmmmmmdmmd-        `:sso-                                      \n" + 
+					"                 -shhhhhhhhdddddh:.ymmmmmmmmmds         .yy:`y/                                     \n" + 
+					"                .yhhhhhhhdddddddddhmmmmmmmmmmdo         /mmd-mm:                                    \n" + 
+					"                ohhhhhddddddddddddmmmmmmmmmmmmh`        /mmmhmmh`     `+yys-                        \n" + 
+					"                yhhhhdddddddddddmmmmmho/-.--+yd/        :mmmdhmm-.-.``ymmmmh                        \n" + 
+					"                shhhdddddddddddddmmy:`       `:y`       .mmmh-ddo+//osmmmmmo                        \n" + 
+					"                /hhdddddddddddddmms`     `..`  ./`       +dh:./.`   +mmmmdo`                        \n" + 
+					"                `+hdddddddddddddhm/     :+/.`   `:`       .. `     `dmmms-                          \n" + 
+					"                 `:yddddddddddy:.d/     ``:o-`    `                 .:+d`                           \n" + 
+					"                   `/oyhhhhyo:`  :y.       .yy/.                    `-h/                            \n" + 
+					"                      `....`      :s:`      .dmdy+-.`           `.-/os:                             \n" + 
+					"                                   .+o:`  `  yyhmmmdhs+/:-::///+++/-.                               \n" + 
+					"                                     ./o+:-+`//`-ohsdmmmoommmdy+:.`                                 \n" + 
+					"                                       `-ddmh/+/.`.`+mh+/mmmmmNNmdhs/-.`                            \n" + 
+					"                                        +mmmmmhs++++o++hmNNmNNNmNNNNNm++/-`                         \n" + 
+					"                                        hmmmmmmNmdhhdmNNmNNNNNNNNNNNmo` .:o.                        \n" + 
+					"                                       `mmmmmhhmNmNNNNNNmNNNNNNNNNNd/.oyy+-s.                       \n" + 
+					"                                       -mmmmm+`:dmNNNNNNNNNmmNNNNdo. sNNNNo-y                       \n" + 
+					"                                       +mmmmm. :h:+syhdddmmddhyo//:-.hNNNNm`y.                      \n" + 
+					"                                       smmmmd `d-    ``...-..` -hNNNdhNNNNm`s/                      \n" + 
+					"                                       dmmmmd :y               hNNNNNmommd/ y/:.`                   \n" + 
+					"                                      `mmmmmmosy              `mNNNNNm`.-. `h`.y`                   \n" + 
+					"                                       dmmmmmmmm.              sNNNNNo    `o:.s.                    \n" + 
+					"                                       :hmmmmmmms`             `/hdh+`  `:o--o.                     \n" + 
+					"                                        `:/+ooosso.               `   `.:/./+`                      \n" + 
+					"                           ``                 `+:oy:..`            `.:o/.:+-                        \n" + 
+					"                      `.:/++++/-`             `d+--/mdhs/-`.....-:+os+/sd/                          \n" + 
+					"                    `:syo:`` `.:o/`            .+oshNNNNmooyy+hm++yydmNNh                           \n" + 
+					"                   .s/..:o+.    `/s.            `:dNNNNmy:--odmo   hNNNN+                           \n" + 
+					"                   o/     :y:     .s.          .ommNNNd/.-:/+my`  `mNNNN:                           \n" + 
+					"                   h`      -h-     -s        `+dmNNNmy.     oh.   -NNNNN.                           \n" + 
+					"                   h`       :y      o-    `.+hmmNmmh/`    `/y.    /NNNNN-      ``````               \n" + 
+					"                   s:        s      .y/:-/sdmmmmmmo`     `oy.`.:/+syhhhhs+o/-///////++/.`           \n" + 
+					"                   -s`       /`      /o.:smmmmmmy-      .so``o:.`        `+y:.       `-+s-          \n" + 
+					"           .        /+`      ..      `+:``/mmds-      `/y/:/ss.``````.-:++/`            :d`         \n" + 
+					"           -`        ++`      -`.       .+`ss.      `:sds+-.`.//++////:.`               .d          \n" + 
+					"           `--`       :o.      `-`       .+y.    `.+o/h/`                              .y:          \n" + 
+					"             `-:-``    .o/`     `/.       `+/`.:/+/. :y                             ``/o-           \n" + 
+					"                `-----.``:s/` ``.+s/.       yo/-`    .h-                         `.///-             \n" + 
+					"                     `.-::+dh+//:` `/+.    `y.        .oo:-``````````````````.-//::`                \n" + 
+					"                           `:/-`     .h. `.o/           `-/////+++++++++///::-.`                    \n" + 
+					"                              -:/:.``-ds+//.                                                        \n" + 
+					"                                 `-:::.`                           ");
+			System.out.println(ConsoleColors.RESET + " ");
+			System.out.println("Donald Duck");
+			System.out.println(ConsoleColors.CYAN + "   --.:                .:++o+`                                        \n" + 
+					"                                -. ..       ....`.:+yyyyyyhhs/`                                     \n" + 
+					"                                `:  /.     `yyyyyyyyyyyyyy/+dhy`                                    \n" + 
+					"                               --`   +      `/oyo/hsyhmd/`  `s``                                    \n" + 
+					"                            -::`     /``++:   :+.``.-..s..`  .                                      \n" + 
+					"                          :/-.. ....`.: ++o+ .+.  .--.-:`-:`                                        \n" + 
+					"                         /::-.```  `  + `/y+/ys  -.```:- `:.                                        \n" + 
+					"                         -:......./- `y:  `+//+--..::-.  :.                                         \n" + 
+					"                          `       yo.oys`  .o://+-dNy/:::.          ``                              \n" + 
+					"                                  hyyyoss` :s+/+++ys+o+/`         .-`:`                             \n" + 
+					"                                  +s++syyo`/o:/o+o+:-.`      ....-. ./                              \n" + 
+					"                                  `syyyyyyss++os/-`       `.:.`   :.`                               \n" + 
+					"                                   `syyhhho:-oyy:`   `.-//..`..`  ./                                \n" + 
+					"                                    `yhdhd+shyssysssy/oyy` ``  ` ``-:                               \n" + 
+					"                                    `yyhhdhyssyyyyyys:yyy:+s:-.``--::-                              \n" + 
+					"                                    `/hyydyhyyyyyyyys:oyyy+.  `.-..:-/                              \n" + 
+					"                                     :yyyhyhyyyyhhhhh+//-.    ``-.-:.-                              \n" + 
+					"                                     ooyyyyssyyyyyydy```.-::---./   `                               \n" + 
+					"                                     :+yyyh/:syyyyyh+      `.  .-                                   \n" + 
+					"                                      +yyyys+syyyys:           /-                                   \n" + 
+					"                                       :ssyyyysso:`          `:-                                    \n" + 
+					"                                         .//:--`            `-`                                     \n" + 
+					"                                     ````-///:.``        `.:+:                                      \n" + 
+					"                                  .::////s///++++/::----:/+::o-                                     \n" + 
+					"                                  /::::::/+///::/+.  `````-+::o                                     \n" + 
+					"                                 -/:://///:::///+/`   .///+:/+/--.`                                 \n" + 
+					"                                 `.---------...`      ./:::///:::////:-                             \n" + 
+					"                                                       .+/::::::::::::/:                            \n" + 
+					"                                                         :+/:::::::::+.                             \n" + 
+					"                                                          `:/+//+/:::.    ");
+			System.out.println(ConsoleColors.RESET + " ");
+			System.out.println("Goofy");
+			System.out.println(ConsoleColors.CYAN + "                                                                                                    \n" + 
+					"                                                                   .--`                             \n" + 
+					"                 ://///-                                          +.`.:/-                           \n" + 
+					"                :/-----::          `  `.`                         /:   `/-      `.-:::::::::::--    \n" + 
+					"                /:----::o.        -` -.                            /:    o.::://:-````        ``+   \n" + 
+					"               `//------:oyo----- : -.`...`                         :- `:/-````-::::::-:---------   \n" + 
+					"              `+-------/mNMd+---o-..::-`           :syo.            ./       :/.``   ``//``````     \n" + 
+					"              -+----:--mMN+-----:yhddmNd+`        `NMMMy            /.       +`.-:::::::+           \n" + 
+					"               /////+::ym+------:NMyoym+o+`      ./NMMMs            s  ---.` .o-`     `-/           \n" + 
+					"                `..``  `+------smhNo  .:.`:-   `/::NMNs::           s :-      -:-----`-/.           \n" + 
+					"                        .::/::sMMNNN:   ``.::`.+.``:/-``/.`         :/-`       ``.-:::.`            \n" + 
+					"                             `sMNMMMN+y/``s+o/-/````````-.:`         +/`      `.-/-.                \n" + 
+					"                              .ddmNNhsyh/-/:/`..`````.-.-:o          /:` `-:::o.`                   \n" + 
+					"                               .ydNh-:-.--`..```````.:-o-:/          -oos+//+o/`                    \n" + 
+					"                               -y.-:/-.-::.``````.-:/` .-.`         `s++NMMMm+oo.                   \n" + 
+					"                             `+d-   y+:.:mmdhyyys::::               `++odNNNmo+o:                   \n" + 
+					"                           .+dh-   :N-`/`oNmmMMMNh:+                 `s+ooooo+os`                   \n" + 
+					"                `.....--/ohmd+`   -md  /..s::ohoym:s-.               `o++++++++s                    \n" + 
+					"               `odmmNNNNmhs:`   `/mN-  -:`./:-::-+:yoo:               .ysoooooy:                    \n" + 
+					"                `.-:::--.     `:hNm:   `+`..:/::://yoso///:-..``      `h++ooo+y                     \n" + 
+					"                             `sdh+.``.-/s:.-:-:::/o+oho+++++oo+++//::-:h++++++y                     \n" + 
+					"                              ...:/++o+++o++yyooo++++odh+++++++++++++ooy++++++y                     \n" + 
+					"                      ``.-::/+++o+++++++++++yNyoossssosNdo+++++++++++++o++++++y                     \n" + 
+					"                    -/+ooo+++++++++++++++++++mNo+++++++ydm///+ooo++++++++++++++                     \n" + 
+					"                   :o++++++++++++++++o+/so+++hMm++++++++oyy`   `.-::/+ooo++++o.                     \n" + 
+					"                   :o+++++++os+o+/:-`  .s++++hMMs+++++++s`m/            `.--.                       \n" + 
+					"                   `s+++++++ss-`       so++++dMMd+++++++y`om`                                       \n" + 
+					"              `     .s++++++so/.      -Ns+++oNMMN+++++++y`-M/                                       \n" + 
+					"            `/--/:.` `o+++++os+o     `dMmo+smMMMN+++++++y`oMd                                       \n" + 
+					"            /:` `o./-`soooooo+oo:   `yMMMMMMMMMMNo++++++mNMMM-                                      \n" + 
+					"           ::.+. /: /--oo++++++o+.:/oNMMMMMMMMMMN++++++hMMMMMo                                      \n" + 
+					"           o  `o  o``/:`sooooydh:ysy+oNMMMMMMMMMN+++++sNMMMMMd                                      \n" + 
+					"           o`  /:-/+:--:s`-mMMMh`:yo+++hMMMMMMMMm++++sNMMMMMMM.                                     \n" + 
+					"           .+  `:.      -+``-:-` +sy++++odNMMMMMh+++yNMMMMMMMMo                                     \n" + 
+					"            -+`          `:::::+syssy++++++ydNMMs++s-/ymMMMMMMm`                                    \n" + 
+					"             `/:`     .----.-/yssysssyo+++++++os+o+`   `.:+oyyy:                                    \n" + 
+					"               `:::--/::oo+yysyyssssssyyo++++++os.                                                  \n" + 
+					"                   `+yssssssssssyysssssssysoo+syy.                                                  \n" + 
+					"                   `yssssssssssssyyyssssssssssyys`                                                  \n" + 
+					"                   .hsssssssssssssssyyysssssssyy:                                                   \n" + 
+					"                   .hssssssssssssssssssyyyyyyyyss-                            `-::-`                \n" + 
+					"                   `hsssssssssssssssssssssssssssss-                         `+yyhhhh+               \n" + 
+					"                    yssssssssssssssssssssssssssssss.                       -yhhhhdddd+              \n" + 
+					"                    :yssssssssssssssssssssssssssssss.                     .hhhhhddmmmm`             \n" + 
+					"                    `ysssssssssssssssssssssssssssssss.                   `yhhhhhdmmmmm:             \n" + 
+					"                     :ysssssssssssssssssssssssssssssss.                  :hhhhhddmmmmm/             \n" + 
+					"                      sssssssssssssyy+ossssssssssssssss-                 shhhhhdmmmmmm-             \n" + 
+					"                      .yssssssssssssy.`-+sssssssssssssss:               `hhhhhdmmmmmdd`             \n" + 
+					"                       :ysssssssssssy`   ./sssssssssssssy/`             -hhhhhdmmmmmmo              \n" + 
+					"                        +yssssssssssy`     ./ssssssssssssso.           `shhhhdmmmmdmd`              \n" + 
+					"                        `sssssssssssy.       `/sssssssssssss:`         /dhhhhmdmmdmm:               \n" + 
+					"                         .ysssssssssy:         `/sssssssssssy+.       -hhhhhdmmdmmd+                \n" + 
+					"                          -ysssssssss+           .+sssssssyssss/`    -hhhhhdmmmdmd+                 \n" + 
+					"                           /ssssssssso             .+sssyssssyyyy/` :hhhhhddmmmmd/                  \n" + 
+					"                           `ssysyyyysy               -oyssshmNNmyysohhhhhddmmmdy-                   \n" + 
+					"                            .sssssssyy`                :sshydNMNdhhhhhhhdmdddh/`                    \n" + 
+					"                             `-+smmNNy/-`               `/yssymhhdhhhhhddddm+`                      \n" + 
+					"                             `shhdmmmhhhs`                `--+hhdhhhhhdddddd/                       \n" + 
+					"     ````..----...``````.-:/oshhhhhhhhhhho:`                 `odhhhhhhdmmmdo`                       \n" + 
+					"   ./osyhhhhhhhhhhyyyyhhhhhhhhhhhhhhhhhhhhh+                  `hhhhhdmmmdy:                         \n" + 
+					"  +hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy`                  -ohhdmdds:                           \n" + 
+					"  ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs/.                     `:oo/.                             \n" + 
+					"   -ohhhhhhhhhhhhhhhhhhhhhhhhhhhso//++/-`                                                           \n" + 
+					"      .:+osyhhhyyyyyhhysso+/:-`                                                                     \n" + 
+					"                                ");
+			System.out.println(ConsoleColors.RESET + " ");
+		}
+		
 		public static void endTour()
 			{
 				System.out.print("Welcome back! We hope you enjoyed your time at the ");
