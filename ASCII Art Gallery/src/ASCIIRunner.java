@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ASCIIRunner
 	{
 
-	//This version is up to date as of Monday, February 22, 2021!
+	//This version is up to date as of Wednesday, February 23, 2021!
 	
 		static Scanner userInput = new Scanner(System.in);
 		static int choice = 0;
@@ -14,10 +14,10 @@ public class ASCIIRunner
 				// 1) Let user choose color they want to see the ASCII art in (Completed)
 				// 2) Have at least 3 categories of pictures for them to look through (Completed)
 				// 3) If time, add a randomized color option
+				// 4) Be able to choose multiple exhibits in one session (Completed)
 
 				greetUser();
 				chooseExhibitAndColor();
-				endTour();
 			}
 		
 		public static void testPlugIn()
@@ -57,46 +57,55 @@ public class ASCIIRunner
 				if(choice == 1)
 					{
 						viewGreenSuperheroes();
+						goAgain();
 					}
 				
 				if(choice == 2)
 					{
 						viewPurpleSuperheroes();
+						goAgain();
 					}
 				
 				if(choice == 3)
 					{
 						viewCyanSuperheroes();
+						goAgain();
 					}
 				
 				if(choice == 4)
 					{
 						viewGreenFlags();
+						goAgain();
 					}
 				
 				if(choice == 5)
 					{
 						viewPurpleFlags();
+						goAgain();
 					}
 				
 				if(choice == 6)
 					{
 						viewCyanFlags();
+						goAgain();
 					}
 				
 				if(choice == 7)
 					{
 						viewGreenDisney();
+						goAgain();
 					}
 				
 				if(choice == 8)
 					{
 						viewPurpleDisney();
+						goAgain();
 					}
 				
 				if(choice == 9)
 					{
 						viewCyanDisney();
+						goAgain();
 					}
 				
 				
@@ -1265,6 +1274,22 @@ public class ASCIIRunner
 					"                                ");
 			System.out.println(ConsoleColors.RESET + " ");
 		}
+		
+		public static void goAgain()
+			{
+				System.out.println("Would you like to view another exhibit?");
+				System.out.println(ConsoleColors.YELLOW + "1) YES" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.RED + "2) NO" +  ConsoleColors.RESET);
+				choice = userInput.nextInt();
+				if(choice == 1)
+					{
+						chooseExhibitAndColor();
+					}
+				else
+					{
+						endTour();
+					}
+			}
 		
 		public static void endTour()
 			{
